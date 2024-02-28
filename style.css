@@ -186,6 +186,9 @@ nav ul li a:hover::after {
     display: block;
     transition: transform 0.5s;
 }
+.work:hover .fa-external-link-alt {
+    color: black; /* Set the color for the hover state */
+  }
 .layer {
     width: 100%;
     height: 0;

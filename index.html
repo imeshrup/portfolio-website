@@ -13,11 +13,11 @@
         <nav>
             <img src="images/Imesh (1).png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" onclick="scrollToSection('header')">Home</a></li>
+                <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#" onclick="scrollToSection('services')">Services</a></li>
+                <li><a href="#" onclick="scrollToSection('portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -105,34 +105,35 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="/images/work-1.png">
+                <img src="/images/Netflix - Watch TV Shows Online1.png">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app that connects with talented people. Download it from Apple playstore</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>Netflix App</h3>
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                        documentaries, and more</p>
+                    <a href="https://myapp-netflix.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="/images/work-2.png">
+                <img src="/images/rsz_1rsz_manage_landing_page.png">
                 <div class="layer">
-                    <h3>Music App</h3>
-                    <p>The app that connects with talented people. Download it from Apple playstore</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>Managing Website</h3>
+                    <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+                    <a href="https://my-managing-site.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="/images/work-3.png">
+                <img src="/images/rsz_food_website.png">
                 <div class="layer">
-                    <h3>Online Shopping App</h3>
-                    <p>The app that connects with talented people. Download it from Apple playstore</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>Facebook Clone</h3>
+                    <p>Facebook connects with people around world</p>
+                    <a href="https://myapp-foodwebsite.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
         <a href="#" class="btn">See more</a>
     </div>
 </div>
-<div class="contact">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -145,7 +146,7 @@
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="/images/imeshrupasingheFRNT.pdf" download class="btn btn2">Download CV</a>
+                <a href="/images/imeshrupweb.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form>
@@ -158,5 +159,14 @@
         </div>
     </div>
 </div>
+<script>
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+  
 </body>
 </html>  
